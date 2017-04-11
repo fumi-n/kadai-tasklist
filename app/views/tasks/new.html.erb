@@ -1,0 +1,10 @@
+<h1>new.html tasklist</h1>
+
+<%= form_for(@tasks) do |f| %>
+  <%= f.label :content, 'new task' %>
+  <%= f.text_field :content %>
+
+  <%= f.submit '投稿' %>
+<% end %>
+
+<%= link_to '一覧に戻る', tasks_path %>
