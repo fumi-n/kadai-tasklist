@@ -12,5 +12,5 @@
 #Task.create(status: 'test status 3', content: 'test content 3')
 
 (1..100).each do |number|
-  Task.create(status: 'test status ' + number.to_s, content: 'test content ' + number.to_s)
+  Task.create(status: 'SStatus' + number.to_s, content: 'SContent' + number.to_s)
 end
