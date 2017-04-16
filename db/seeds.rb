@@ -11,6 +11,7 @@
 #Task.create(status: 'test status 2', content: 'test content 2')
 #Task.create(status: 'test status 3', content: 'test content 3')
 
-(1..100).each do |number|
-  Task.create(status: 'SStatus' + number.to_s, content: 'SContent' + number.to_s)
+##model>[app].rb にValidationフィルタがあるとうまく反映されない(文字数など)
+(1..10).each do |num|
+  Task.create(status: 'status-#{num}' , content: 'content-#{num}')
 end
