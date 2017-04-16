@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 #add /16  testdatas
-Task.create(status: 'test status 1', content: 'test content 1')
+Task.create(id: 2, status: 'test status 1', content: 'test content 1')
 Task.create(status: 'test status 2', content: 'test content 2')
 Task.create(status: 'test status 3', content: 'test content 3')
 
