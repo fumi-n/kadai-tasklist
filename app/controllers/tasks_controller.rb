@@ -6,6 +6,10 @@ class TasksController < ApplicationController
 #add 2017年04月09日
   def index
     @tasks = Task.all
+    
+    #pageNation
+    @tasks = Task.all.page(params[:page]).per(10)
+  
   end
 
   def show
@@ -62,7 +66,7 @@ class TasksController < ApplicationController
     
   # Strong Parameter
   def task_params
-    params.require(:task).permit(:content)
+    params.require(:task).permit(:content, :status)
   end
   
 
